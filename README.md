@@ -9,4 +9,4 @@
 ## Query to Display Employee Data
 - `query_select_semua_data.sql`: Script to display all employee data with their current position information.
 
-#Desain Alur ETL (Extract, Transform, Load)
+# Desain Alur ETL (Extract, Transform, Load)
