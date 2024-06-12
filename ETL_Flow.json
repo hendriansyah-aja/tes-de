@@ -1,0 +1,57 @@
+{
+  "name": "ETL_Workflow",
+  "properties": {
+    "activities": [
+      {
+        "name": "ExtractEmployeeData",
+        "type": "Copy",
+        "inputs": [
+          {
+            "referenceName": "SourceAzureSqlDataset",
+            "type": "DatasetReference"
+          }
+        ],
+        "outputs": [
+          {
+            "referenceName": "EmployeeRawData",
+            "type": "DatasetReference"
+          }
+        ],
+        "typeProperties": {
+          "source": {
+            "type": "SqlSource",
+            "sqlReaderQuery": "SELECT * FROM Employee;"
+          },
+          "sink": {
+            "type": "AzureBlobSink"
+          }
+        }
+      },
+      {
+        "name": "ExtractTrainingHistory",
+        "type": "Copy",
+        "inputs": [
+          {
+            "referenceName": "SourceGoogleSheetDataset",
+            "type": "DatasetReference"
+          }
+        ],
+        "outputs": [
+          {
+            "referenceName": "TrainingHistoryRawData",
+            "type": "DatasetReference"
+          }
+        ],
+        "typeProperties": {
+          "source": {
+            "type": "GoogleSheetSource",
+            "query": "SELECT * FROM TrainingHistory"
+          },
+          "sink": {
+            "type": "AzureBlobSink"
+          }
+        }
+      }
+    ]
+  }
+}
