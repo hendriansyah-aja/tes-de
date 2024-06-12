@@ -9,29 +9,10 @@
 ## Query to Display Employee Data
 - `query_select_semua_data.sql`: Script to display all employee data with their current position information.
 
-# Desain Alur ETL (Extract, Transform, Load)
-
-## Persiapan Data Employee
-- Database: Azure SQL Server
-- Tabel: Employee
-- data dapat diperoleh dari query create dan hasil query insert di atas
-
-## Persiapan Data Riwayat Pelatihan di Google Sheets
-- Data berupa google sheet
-
-## Ekstrak data dari data sources ke datawarehouse (menggunakan azure) 
-### From Azure
-- Menggunakan Azure Data Factory (ADF) untuk mengekstrak data langsung dari Azure SQL Server
-- 'konfig_koneksi_azure_to_database' : skript Buat Linked Service untuk Azure SQL dan konfigurasikan koneksi ke database
-- 'sources_data_Azure_SQL.json' : skript Buat dataset untuk sumber data Azure SQL
-### From  Google Worksheet:
-- 'skrip_python_akses_googlesheet.py' : skrip Python untuk mengakses data dari Google Sheets
-
-## Transform Data ke data Staging
- - 'Staging_Tabel_Data_Employee.sql' : Staging Tabel untuk Data Employee
- - 'Staging_Tabel_Data_Riwayat_Pelatihan.sql' :Staging Tabel untuk Data Riwayat Pelatihan
- - Data yang telah diekstrak ke staging tables akan dibersihkan dan diubah jika diperlukan
-
-## Memuat Data ke tabel ke Data Warehouse
- : Tabel Final untuk Data Employee
- : Tabel Final untuk Data Riwayat Pelatihan
+# Desain Alur ETL (Extract, Transform, Load) : data warehouse menggunakan azure
+## 'ETL_flow' : Desain Alur Kerja ETL Menggunakan Azure Data Factory (JSON)
+## 'Ekstraksi_Data_Azure.SQL' Ekstraksi Data dari Azure SQL Server (SQL) 
+## 'Ekstraksi_Data_Google_Sheets.py : Ekstraksi Data dari Google Sheets (Python)
+## 'Transformasi_Data.sql' : Menggabungkan data karyawan dan riwayat pelatihan
+## 'Transformasi_Data.py' : menggabungkan data dari dua sumber menggunakan pandas
+## 'Memuat_Data.sql' : Memuat Data ke Data Warehouse SQL azure 
