@@ -10,3 +10,16 @@
 - `query_select_semua_data.sql`: Script to display all employee data with their current position information.
 
 # Desain Alur ETL (Extract, Transform, Load)
+
+## Persiapan Data Sumber
+- Database: Azure SQL Server
+- Tabel: Employee
+- Kolom Contoh:
+EmployeeId (VARCHAR)
+FullName (VARCHAR)
+BirthDate (DATE)
+Position (VARCHAR)
+Address (VARCHAR)
+- build/ created table (query di created_tables 'employee')
+
+## Persiapan Data 
