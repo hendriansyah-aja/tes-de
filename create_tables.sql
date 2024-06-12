@@ -1,3 +1,7 @@
-CREATE TABLE Employee ( 
-    Id INTEGER PRIMARY KEY, 
-    EmployeeId VARCHAR(10) UNIQUE, 
+CREATE TABLE Employee (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    EmployeeId VARCHAR(10) UNIQUE NOT NULL,
+    FullName VARCHAR(100) NOT NULL,
+    BirthDate DATE NOT NULL,
+    Address VARCHAR(500)
+);
