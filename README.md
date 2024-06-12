@@ -27,4 +27,11 @@
 ### From  Google Worksheet:
 - 'skrip_python_akses_googlesheet.py' : skrip Python untuk mengakses data dari Google Sheets
 
- ## Transform Data
+## Transform Data ke data Staging
+ - 'Staging_Tabel_Data_Employee.sql' : Staging Tabel untuk Data Employee
+ - 'Staging_Tabel_Data_Riwayat_Pelatihan.sql' :Staging Tabel untuk Data Riwayat Pelatihan
+ - Data yang telah diekstrak ke staging tables akan dibersihkan dan diubah jika diperlukan
+
+## Memuat Data ke tabel ke Data Warehouse
+ : Tabel Final untuk Data Employee
+ : Tabel Final untuk Data Riwayat Pelatihan
