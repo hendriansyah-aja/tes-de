@@ -20,5 +20,10 @@
 - Data berupa google sheet
 
 ## ETL Proses tujuan ke datawarehouse menggunakan Azure
+### From Azure
 - Menggunakan Azure Data Factory (ADF) untuk mengekstrak data langsung dari Azure SQL Server
 - 'konfig_koneksi_azure_to_database' : skript Buat Linked Service untuk Azure SQL dan konfigurasikan koneksi ke database
+- 'sources_data_Azure_SQL.json' : skript Buat dataset untuk sumber data Azure SQL
+### From  Google Worksheet:
+
+- 
