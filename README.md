@@ -14,12 +14,11 @@
 ## Persiapan Data Employee
 - Database: Azure SQL Server
 - Tabel: Employee
-- Kolom Contoh:
-EmployeeId (VARCHAR)
-FullName (VARCHAR)
-BirthDate (DATE)
-Position (VARCHAR)
-Address (VARCHAR)
-- build/ created table (query di created_tables 'employee')
+- data dapat diperoleh dari query create dan hasil query insert di atas
 
 ## Persiapan Data Riwayat Pelatihan di Google Sheets
+- Data berupa google sheet
+
+## ETL Proses tujuan ke datawarehouse menggunakan Azure
+- Menggunakan Azure Data Factory (ADF) untuk mengekstrak data langsung dari Azure SQL Server
+- 'konfig_koneksi_azure_to_database' : skript Buat Linked Service untuk Azure SQL dan konfigurasikan koneksi ke database
