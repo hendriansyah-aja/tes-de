@@ -11,7 +11,7 @@
 
 # Desain Alur ETL (Extract, Transform, Load)
 
-## Persiapan Data Sumber
+## Persiapan Data Employee
 - Database: Azure SQL Server
 - Tabel: Employee
 - Kolom Contoh:
@@ -22,4 +22,4 @@ Position (VARCHAR)
 Address (VARCHAR)
 - build/ created table (query di created_tables 'employee')
 
-## Persiapan Data 
+## Persiapan Data Riwayat Pelatihan di Google Sheets
