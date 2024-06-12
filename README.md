@@ -18,4 +18,5 @@ data sources satu dari azure, satu dari GCP, dan data warehouse menggunakan azur
 ## 'Transformasi_Data.py' : menggabungkan data dari dua sumber menggunakan pandas
 ## 'Memuat_Data.sql' : Memuat Data ke Data Warehouse SQL azure 
 
-
+# Design Report historical training Data
+- dalam visualisasi report 
