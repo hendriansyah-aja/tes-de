@@ -1,0 +1,3 @@
+CREATE TABLE Employee ( 
+    Id INTEGER PRIMARY KEY, 
+    EmployeeId VARCHAR(10) UNIQUE, 
