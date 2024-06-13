@@ -19,7 +19,7 @@ data sources satu dari azure, satu dari GCP, dan data warehouse menggunakan azur
 ## 'Memuat_Data.sql' : Memuat Data ke Data Warehouse SQL azure 
 
 # Design Report historical training Data
-- dalam visualisasi report saya menggunakan power bi untuk menampilkan historical data training
+- dalam visualisasi report saya menggunakan google data studio untuk menampilkan historical data training
 - untuk sources menggunakanSQL server yang dapat di set di pengaturan source di power bi
 - 'Query_SQL_for_pwr_BI.sql' = query untuk menampilkan tabel historical training data
 
@@ -31,6 +31,7 @@ data sources satu dari azure, satu dari GCP, dan data warehouse menggunakan azur
 - 'Query_SQL_pwr_BI_Total Training' : query untuk menampilkan total training
 
 noted untuk dasboard/report
+- saya menggunakan google data studio, karena
 - nanti saya akan menampilkan pilihan filter range tanggal,employer id, Traning name, sehingga user bisa memilih filter sesuai data yang dibutuhkan
 -  karena saya tidak punya akses ke azure, jdi untuk sources nya saya ganti menjadi google sheet. tapi jika menggunakan azzure saya bisa melakukan konfigurasinya
 - saya juga bisa membuat dasboard itu terupdate secara otomatis, seusai jadwal update yang diinginkan, seperti perjam,perhari. 
