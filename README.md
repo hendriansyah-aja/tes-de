@@ -35,4 +35,4 @@ noted : karena saya biasanya menggunakan power BI dan kurang terbiasa menggunaka
 - 'Query_SQL_pwr_BI_report_Training.sql' : query untuk menampilkan total training(digunakan jika menggunakan power bi,dan sourcesnya dari sql, jdi untuk diplay saat ini tidak menggunakan data ini)
 - nanti saya akan menampilkan pilihan filter range tanggal,employer id, Traning name, sehingga user bisa memilih filter sesuai data yang dibutuhkan
 - saya juga bisa membuat dasboard itu terupdate secara otomatis, seusai jadwal update yang diinginkan, seperti perjam,perhari.
-
+link : https://lookerstudio.google.com/reporting/3aab3458-9f6e-46ae-b78d-bcbb5f854c8c
