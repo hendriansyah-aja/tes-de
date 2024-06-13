@@ -19,19 +19,18 @@ data sources satu dari azure, satu dari GCP, dan data warehouse menggunakan azur
 ## 'Memuat_Data.sql' : Memuat Data ke Data Warehouse SQL azure 
 
 # Design Report historical training Data
-- dalam visualisasi report saya menggunakan google data studio untuk menampilkan historical data training
-- untuk sources menggunakanSQL server yang dapat di set di pengaturan source ditableau
-- 'Query_SQL_for_report.sql' = query untuk menampilkan tabel historical training data
-
+- dalam visualisasi report saya hanya menggunakan google data studio untuk menampilkan historical data training, karena untuk power BI dan tableau saya tidak memiliki akses ke sana
+- seharusnya untuk sourcesnya menggunakanSQL server yang dapat di set di pengaturan source ditableau, namun karena saya tidak memiliki akses maka saya menggunakan worksheet saja
+- 'Query_SQL_for_report.sql' = query untuk menampilkan tabel historical training data(digunakan jika menggunakan power bi,dan sourcesnya dari sql, jdi untuk diplay saat ini tidak menggunakan data ini)
+- nanti saya akan menampilkan pilihan filter range tanggal,employer id, Traning name, sehingga user bisa memilih filter sesuai data yang dibutuhkan
+- - saya juga bisa membuat dasboard itu terupdate secara otomatis, seusai jadwal update yang diinginkan, seperti perjam,perhari.
+link https://lookerstudio.google.com/reporting/f57c9c39-cf2c-4830-b4c9-4886b1ae713b
   
 # Design Report Total employee completed training each month, and Total training each month
 - dalam visualisasi report saya menggunakan tableau untuk menampilkan historical data training
-- untuk sources menggunakanSQL server yang dapat di set di pengaturan source di tableau
-- 'Query_SQL_pwr_report_Employee.sql' : query untuk menampilkan total employer
-- 'Query_SQL_pwr_BI_report_Training.sql' : query untuk menampilkan total training
-
-noted untuk dasboard/report
-- saya menggunakan google data studio, karena untuk power bi dan tableau saya tidak punya akses akun untuk pribadi dan berbayar
+- untuk sources menggunakanSQL server yang dapat di set di pengaturan source di tableau, namun karena saya tidak memiliki akses maka saya menggunakan worksheet saja
+- 'Query_SQL_pwr_report_Employee.sql' : query untuk menampilkan total employer(digunakan jika menggunakan power bi,dan sourcesnya dari sql, jdi untuk diplay saat ini tidak menggunakan data ini)
+- 'Query_SQL_pwr_BI_report_Training.sql' : query untuk menampilkan total training(digunakan jika menggunakan power bi,dan sourcesnya dari sql, jdi untuk diplay saat ini tidak menggunakan data ini)
 - nanti saya akan menampilkan pilihan filter range tanggal,employer id, Traning name, sehingga user bisa memilih filter sesuai data yang dibutuhkan
--  karena saya tidak punya akses ke azure, jdi untuk sources nya saya ganti menjadi google sheet. tapi jika menggunakan azzure saya bisa melakukan konfigurasinya
-- saya juga bisa membuat dasboard itu terupdate secara otomatis, seusai jadwal update yang diinginkan, seperti perjam,perhari. 
+- saya juga bisa membuat dasboard itu terupdate secara otomatis, seusai jadwal update yang diinginkan, seperti perjam,perhari.
+  Link : 
