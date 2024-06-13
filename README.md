@@ -25,6 +25,8 @@ data sources satu dari azure, satu dari GCP, dan data warehouse menggunakan azur
 - nanti saya akan menampilkan pilihan filter range tanggal,employer id, Traning name, sehingga user bisa memilih filter sesuai data yang dibutuhkan
 - - saya juga bisa membuat dasboard itu terupdate secara otomatis, seusai jadwal update yang diinginkan, seperti perjam,perhari.
 link https://lookerstudio.google.com/reporting/f57c9c39-cf2c-4830-b4c9-4886b1ae713b
+
+noted : karena saya biasanya menggunakan power BI dan kurang terbiasa menggunakan google datastudio jadi hasilnya menurut saya masih standar
   
 # Design Report Total employee completed training each month, and Total training each month
 - dalam visualisasi report saya menggunakan tableau untuk menampilkan historical data training
